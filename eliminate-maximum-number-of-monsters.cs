@@ -10,13 +10,13 @@ public class Solution {
         }
         Array.Sort(dist);
 
-        int x = 0;
+        int timeElapsed = 0;
         // Check if we can continue to eliminate
         for(int i = 0; i < n; i++) {
-            if(x >= dist[i]){
+            if(timeElapsed >= dist[i]){
                 return i;
             }
-            x++;
+            timeElapsed++;
         }
         return n;
     }
